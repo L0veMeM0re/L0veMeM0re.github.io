@@ -1,4 +1,6 @@
 .body {
+  display: flex;
+  flex-direction: column;
   background-color: #42D1DB;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -10,7 +12,9 @@
 .header {
   color: #0a18b7;
   text-align: left;
+
 }
+
 
 /* Блок "heading" */
 .heading {
@@ -21,6 +25,8 @@
 
 /* Блок "navigation" */
 .navigation {
+  display: flex;
+  justify-content: space-between;
   background-color: #0b3db0;
   padding: 10px;
 }
@@ -55,6 +61,7 @@
 
 /* Блок "preformatted" */
 .preformatted {
+  justify-content: flex-start;
   color: #0e6085;
   padding: 10px;
 }
@@ -92,9 +99,13 @@
 
 /* Блок "footer" */
 .footer {
+  position: absolute;
+  left: 0;
+  width: 100%;
   text-align: left;
   background-color: #333;
   color: #fff;
+  padding: 10px 0;
 }
 
 .my_p{
@@ -122,4 +133,73 @@ img {
   border: 2px solid #ccc;
   margin: 10px;
   box-shadow: 5px 5px 5px #888;
+}
+
+/* Галерея стилей */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Горизонтальный ряд изображений */
+.horizontal-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Вертикальный ряд изображений */
+.vertical-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Стили для изображений */
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  margin: 5px;
+}
+
+/* Скрываем ASCII-арт при разрешении в 768 пикселей и меньше */
+@media screen and (max-width: 768px) {
+  .preformatted {
+    display: none;
+  }
+}
+
+
+/* Стили для таблицы данных */
+.table-container {
+  display: grid;
+  /*grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Адаптивные колонки */
+  gap: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5px;
+}
+
+/* Стили для четных и нечетных строк */
+.table-row:nth-child(odd) {
+  background-color: #d30e0e; /* Четные строки */
+}
+
+.table-row:nth-child(even) {
+  background-color: #3485ee; /* Нечетные строки */
 }
