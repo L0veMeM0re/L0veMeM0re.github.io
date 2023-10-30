@@ -203,3 +203,53 @@ img {
 .table-row:nth-child(even) {
   background-color: #3485ee; /* Нечетные строки */
 }
+
+.footer_load_time{
+  text-align: left;
+}
+
+
+.header__nav .container ul li.active {
+  background-color: darkslateblue;
+  transition: 0.3s ease background-color;
+}
+
+.header__nav .container ul li a:hover {
+  color: white;
+  text-shadow: -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+.header__nav .container ul li.active a {
+  color: rgb(255, 255, 255);
+}
+
+.header__nav .navigation__list ul li a:hover{
+  color: white;
+  text-shadow: -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+.header__nav .navigation__list ul li a.active{
+
+}
+.header__nav .navigation__list ul li.active a{
+  color: rgb(255, 255, 255);
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0b3db0;
+  padding: 10px;
+}
+
+.navigation__list li.active {
+  /* Стили для активного пункта меню */
+  background-color: #115af5; /* Например, измените цвет фона */
+  color: #fff; /* Например, измените цвет текста */
+}
