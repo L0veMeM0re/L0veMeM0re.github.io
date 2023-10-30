@@ -209,30 +209,13 @@ img {
 }
 
 
-.header__nav .container ul li.active {
-  background-color: darkslateblue;
-  transition: 0.3s ease background-color;
-}
 
-.header__nav .container ul li a:hover {
-  color: white;
-  text-shadow: -1px -1px 0 #000,
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-  1px 1px 0 #000;
-}
 
-.header__nav .container ul li.active a {
-  color: rgb(255, 255, 255);
-}
 
-.header__nav .navigation__list ul li a:hover{
-  color: white;
-  text-shadow: -1px -1px 0 #000,
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-  1px 1px 0 #000;
-}
+
+
+
+
 
 .header__nav .navigation__list ul li a.active{
 
@@ -253,3 +236,50 @@ img {
   background-color: #115af5; /* Например, измените цвет фона */
   color: #fff; /* Например, измените цвет текста */
 }
+
+.news-article {
+  background-color: #2f7fec;
+  border: 1px solid #0a18b7;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgb(2, 2, 2);
+}
+
+.news-title {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: #020202;
+}
+
+.news-date {
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.news-content {
+  font-size: 1rem;
+  color: #020202;
+}
+
+.active {
+  font-weight: bold;
+  color: #ec0202; /* Цвет для активной ссылки */
+  /* Другие стили для активной ссылки */
+}
+.navigation__list {
+  display: flex; /* Добавляем это свойство */
+  list-style: none; /* Убираем маркеры списка */
+  padding: 0; /* Убираем внутренний отступ */
+}
+
+.navigation__list li {
+  margin-right: 10px; /* Добавляем небольшой отступ между элементами */
+}
+
+/* Опционально: добавляем стили для ссылок */
+.navigation__list li a {
+  text-decoration: none;
+  color: white;
+}
+
