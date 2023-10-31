@@ -14,6 +14,9 @@
   text-align: left;
 
 }
+.main{
+  display: flex;
+}
 
 
 /* Блок "heading" */
@@ -143,14 +146,14 @@ img {
   text-align: center;
 }
 
-/* Горизонтальный ряд изображений */
+
 .horizontal-row {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
-/* Вертикальный ряд изображений */
+
 .vertical-row {
   display: flex;
   flex-direction: column;
@@ -165,14 +168,18 @@ img {
 }
 
 /* Скрываем ASCII-арт при разрешении в 768 пикселей и меньше */
+@media screen and (max-width: 500px) {
+  .horizontal-row {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .preformatted {
     display: none;
   }
 }
 
-
-/* Стили для таблицы данных */
 .table-container {
   display: grid;
   /*grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Адаптивные колонки */
@@ -208,15 +215,6 @@ img {
   text-align: left;
 }
 
-
-
-
-
-
-
-
-
-
 .header__nav .navigation__list ul li a.active{
 
 }
@@ -232,9 +230,9 @@ img {
 }
 
 .navigation__list li.active {
-  /* Стили для активного пункта меню */
-  background-color: #115af5; /* Например, измените цвет фона */
-  color: #fff; /* Например, измените цвет текста */
+
+  background-color: #115af5;
+  color: #fff;
 }
 
 .news-article {
@@ -264,11 +262,10 @@ img {
 
 .active {
   font-weight: bold;
-  color: #ec0202; /* Цвет для активной ссылки */
-  /* Другие стили для активной ссылки */
+  color: #ec0202;
 }
 .navigation__list {
-  display: flex; /* Добавляем это свойство */
+  display: flex;
   list-style: none; /* Убираем маркеры списка */
   padding: 0; /* Убираем внутренний отступ */
 }
@@ -277,9 +274,12 @@ img {
   margin-right: 10px; /* Добавляем небольшой отступ между элементами */
 }
 
-/* Опционально: добавляем стили для ссылок */
+
 .navigation__list li a {
   text-decoration: none;
   color: white;
 }
 
+.Gallery{
+  color: red;
+}
