@@ -1,0 +1,28 @@
+.main__comments {
+  margin-top: 20px;
+}
+
+.comment {
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.main__loader {
+  display: none;
+}
+
+.fa {
+  display: none;
+}
+
+
+.main__add-button {
+  background-color: #065dc2;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 2.5vh;
+  padding: 1.5vh;
+  font-size: 1.5vh;
+}

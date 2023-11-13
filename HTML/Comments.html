@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="геймдев, игры, разработка игр">
+  <meta name="description" content="Этот сайт посвящен теме геймдев и содержит информацию о разработке игр.">
+  <title>Комментарии</title>
+
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/Mock.css">
+</head>
+<body class="body" >
+<header class="header">
+  <img src="https://i.playground.ru/p/lJbBQT5f_KwmJoB2KZjHbQ.png"  alt="error">
+
+  <nav class="header__nav">
+
+    <ul class="navigation__list">
+      <!--<li><a href="#">Главная</a></li>-->
+      <li class="navigation_item"><a href="index.html">Главная</a>  </li>
+      <li class="navigation_item"><a href="News.html">Новости</a>  </li>
+      <li class="navigation_item "><a href="Gallery.html">Галерея</a></li>
+      <li class="navigation_item"><a href="toDo.html">toDo</a>  </li>
+      <li class="navigation_item"><a  href="Comments.html">Comments</a>  </li>
+
+    </ul>
+  </nav>
+</header>
+<main>
+
+
+
+
+
+<form id="commentForm">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="comment">Comment:</label>
+  <textarea id="comment" name="comment" required></textarea>
+
+  <button class="main__add-button" type="button" onclick="validateAndSubmit()">Submit Comment</button>
+</form>
+
+<div class="main__comments"></div>
+<div class="main__loader">
+  <img src="/GIF/hm_smile.gif"/>
+</div>
+<div class="fa">Я думаю, подождите</div>
+
+
+
+
+
+<button class="main__more" onclick="loadMoreComments()">Load More Comments</button>
+
+
+
+<script src="/js/Mock.js"></script>
+
+  <footer class="footer">
+    <div class="footer_load_time">
+      <h3>Page load time</h3>
+      <span id="load_time"></span>
+    </div>
+    <p>&copy; 2023 sadLMM </p>
+  </footer>
+
+</main>
+</body>
+</html>

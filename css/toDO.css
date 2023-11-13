@@ -1,0 +1,191 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  background-color: #42D1DB;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 5px;
+  text-align: left;
+}
+
+/* Блок "header" */
+.header {
+  color: #0a18b7;
+  text-align: left;
+
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0b3db0;
+  padding: 10px;
+}
+.navigation__list {
+  display: flex;
+  list-style: none; /* Убираем маркеры списка */
+  padding: 0; /* Убираем внутренний отступ */
+}
+
+.navigation__list li {
+  margin-right: 10px; /* Добавляем небольшой отступ между элементами */
+}
+
+
+.navigation__list li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navigation_item:hover {
+  background-color: #09bdbd;
+}
+.navigation__list li.active {
+
+  background-color: #115af5;
+  color: #fff;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  border: 2px solid #ccc;
+  margin: 10px;
+  box-shadow: 5px 5px 5px #888;
+}
+
+h1 {
+  font-size: 7vh;
+  text-align: center;
+}
+
+h2 {
+  font-size: 4vh;
+  font-style: italic;
+  text-align: center;
+}
+
+
+
+p, ul, ol, a, span {
+  font-size: 2.5vh;
+  line-height: 4.8vh;
+}
+
+ul {
+  list-style-type: none;
+}
+
+pre {
+  font-size: 2.5vh;
+  line-height: 4vh;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  background: lavender;
+  font-family: Georgia, serif;
+}
+
+.main__rollback {
+  margin-top: 4vh;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: cadetblue;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vh;
+}
+
+.main__todo-form {
+  margin: 6vh 0;
+}
+
+.main__todo-input {
+  border: none;
+  outline: none;
+  border-radius: 1.5vh;
+  padding: 1.5vh;
+  margin-right: 2vh;
+  font-size: 2.8vh;
+}
+
+.main__add-button {
+  background-color: #065dc2;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 1.5vh;
+  padding: 1.5vh;
+  font-size: 2.8vh;
+}
+
+.main__todo-items {
+  min-width: 100%;
+}
+
+.item {
+  background-color: #fff;
+  padding: 1.5vh;
+  font-size: 2.8vh;
+}
+
+.item:first-child {
+  border-top-left-radius: 1.5vh;
+  border-top-right-radius: 1.5vh;
+}
+
+.item:last-child {
+  border-bottom-left-radius: 1.5vh;
+  border-bottom-right-radius: 1.5vh;
+}
+
+.checkbox {
+  margin-right: 1.7vh;
+}
+
+.delete-button {
+  float: right;
+  background-color: #0744c4;
+  border: none;
+  outline: none;
+  border-radius: 1vh;
+  padding: 1.1vh 1.1vh;
+  margin-left: 2vh;
+  font-size: 2.8vh;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+.main__button {
+  font-size: 2.5vh;
+  width: 40vh;
+  height: 4vh;
+}
+.footer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.footer_load_time{
+  text-align: left;
+}
