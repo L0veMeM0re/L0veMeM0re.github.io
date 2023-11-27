@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+  <title>Сайт о геймдеве</title>
   <meta charset="UTF-8">
   <meta name="keywords" content="геймдев, игры, разработка игр">
   <meta name="description" content="Этот сайт посвящен теме геймдев и содержит информацию о разработке игр.">
 
+
   <script src="../js/Page_load_time.js"></script>
+  <link href="/css/styles.css" rel="stylesheet">
+  <link href="/css/Image.css" rel="stylesheet">
 
 
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/Image.css">
-  <script src="../js/activeTab.js"></script>
+  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet"/>
 
-  <title>Сайт о геймдеве</title>
+
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script defer src="/js/gallery.js"></script>
 </head>
 <body class="body">
 <header class="header">
@@ -23,49 +28,60 @@
 
   <nav class="header__nav">
 
-      <ul class="navigation__list">
+    <ul class="navigation__list">
       <!--<li><a href="#">Главная</a></li>-->
-      <li class="navigation_item"><a href="index.html">Главная</a>  </li>
+      <li class="navigation_item"><a href="../index.html">Главная</a>  </li>
       <li class="navigation_item"><a href="News.html">Новости</a>  </li>
       <li class="navigation_item"><a href="Gallery.html">Галерея</a></li>
-        <li class="navigation_item"><a href="toDo.html">toDO</a></li>
-        <li class="navigation_item"><a  href="Comments.html">Comments</a>  </li>
+      <li class="navigation_item"><a href="toDo.html">toDO</a></li>
+      <li class="navigation_item"><a  href="Comments.html">Comments</a>  </li>
 
     </ul>
   </nav>
 </header>
 <main>
+
   <h3 class="image-heading">Инди Игры</h3>
-  <section class="container">
-    <div class="slider-wrapper">
-      <div class="slider" id="image-slider-1">
-        <img id="slide-1" src="https://wallpapers.com/images/high/indie-games-1920-x-1200-wallpaper-4uxms8qymoasacbl.webp" alt="" />
-        <img id="slide-2" src="https://wallpapers.com/images/high/indie-games-1920-x-1080-wallpaper-1pp1ojj062dm00wa.webp" alt="" />
-        <img id="slide-3" src="https://wallpapers.com/images/high/indie-games-1600-x-900-wallpaper-tjoo0bfdchndl1yh.webp" alt="" />
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="/img/hades.jpg">
       </div>
-      <div class="slider-nav">
-        <a href="#slide-1"></a>
-        <a href="#slide-2"></a>
-        <a href="#slide-3"></a>
+      <div class="swiper-slide">
+        <img src="/img/Hotline.jpg">
+      </div>
+      <div class="swiper-slide">
+        <img src="/img/Sable.jpeg">
       </div>
     </div>
-  </section>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
 
   <h3 class="image-heading">AAA игры</h3>
-  <section class="container">
-    <div class="slider-wrapper">
-      <div class="slider" id="image-slider-2">
-        <img id="slide-4" src="https://www.thelostgamer.com/wp-content/uploads/2020/11/DOOM-Eternal-1024x576.jpg.webp" alt="" />
-        <img id="slide-5" src="https://www.thelostgamer.com/wp-content/uploads/2020/11/Baldurs-Gate-3-1024x587.jpg.webp" alt="" />
-        <img id="slide-6" src="https://www.thelostgamer.com/wp-content/uploads/2020/11/Watch-Dogs-Legion-1024x576.jpg.webp" alt="" />
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="/img/BG3.jpg">
       </div>
-      <div class="slider-nav">
-        <a href="#slide-4"></a>
-        <a href="#slide-5"></a>
-        <a href="#slide-6"></a>
+      <div class="swiper-slide">
+        <img src="/img/RE4.jpg">
+      </div>
+      <div class="swiper-slide">
+        <img src="/img/elden_ring.jpg">
       </div>
     </div>
-  </section>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
 
   <footer class="footer">
 
@@ -77,7 +93,6 @@
 
     <p>&copy; 2023 sadLMM </p>
   </footer>
-
 
 </main>
 </body>
